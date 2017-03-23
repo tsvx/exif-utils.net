@@ -42,9 +42,8 @@ namespace ExifDemo
 	{
 		static void Main(string[] args)
 		{
-			// choose an image
-			Console.Write("Enter image load path: ");
-			string imagePath = Console.ReadLine();
+			// choose an image load path
+			string imagePath = args[0];
 			int lastDot = imagePath.LastIndexOf('.');
 			Console.WriteLine();
 
